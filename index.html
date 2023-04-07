@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
+
 <body>
-    
+    <div class="app">
+        <div class="panel">
+            <img class="logo" src="./img/HabbitAppLogo.svg" alt="App Logo">
+            <div class="menu">
+                <div class="menu__list">
+                    <button class="menu__item menu__item_active">
+                        <img src="./img/Water.svg" alt="Habbit">
+                    </button>
+                    <button class="menu__item">
+                        <img src="./img/Food.svg" alt="Habbit">
+                    </button>
+                </div>
+                <button class="menu__add">
+                    <img src="./img/Add.svg" alt="Add Habbit">
+                </button>
+            </div>
+        </div>
+        <div class="content">
+            <header>
+                <h1>Push Ups</h1>
+                <div class="progress">
+                    <div class="progress__text">
+                        <div class="progress__name">Progress</div>
+                        <div class="progress__persent">80%</div>
+                    </div>
+                    <div class="progress__bar">
+                        <div class="progress__cover-bar"></div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div>
+                    <div class="habbit">
+                        <div class="habbit__day">День 1</div>
+                        <div class="habbit__comment">Первый подход всегда даётся тяжело</div>
+                        <button class="habbit__delete">
+                            <img src="./img/delete.svg" alt="delete">
+                        </button>
+                    </div>
+                    <div class="habbit">
+                        <div class="habbit__day">День 2</div>
+                        <form class="habbit-form">
+                            <input class="habbit-icon" type="text" placeholder="Comments">
+                            <img class="habbit__icon"src="./img/comment.svg" alt="Comment Icon">
+                            <button class="add-button">Add</button>
+                        </form>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+    <script src="./scripts/main.js"></script>
 </body>
+
 </html>
